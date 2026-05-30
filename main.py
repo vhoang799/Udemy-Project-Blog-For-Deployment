@@ -11,9 +11,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 # Import your forms from the forms.py
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
-load_dotenv("./.env")
+#load_dotenv("./.env")
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv("FLASK_KEY")
 ckeditor = CKEditor(app)
